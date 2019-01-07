@@ -1,0 +1,61 @@
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+main
+  padding-top: 50px
+.main_content
+  padding-top: 80px
+.product-list__th
+  cursor: pointer
+  .th-text:after
+    display: none
+  &.desc
+    .th-text
+      &:after
+        display: block
+        transform: rotate(180deg)
+  &.asc
+    .th-text
+      &:after
+        display: block
+.th-text
+  text-transform: uppercase
+  position: relative
+  padding: 0 15px
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: 3px
+    width: 15px
+    height: 15px
+    background-image: url("../img/svg_icons/sort-up-ascending-arrow.svg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+.icon
+  width: 20px
+  height: auto
+#pagination
+  margin: 30px auto
+  flex-wrap: wrap
+  justify-content: center
+#preloader
+  position: fixed
+  display: flex
+  justify-content: center
+  align-items: center
+  left: 0
+  right: 0
+  bottom: 0
+  top: 0
+  background: rgba(0, 0, 0, .7)
+  z-index: 1000
+.loader
+  width: 80px
+  height: auto
+  -webkit-animation: spin 1s infinite linear
+  @-webkit-keyframes spin
+    0%   {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}

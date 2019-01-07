@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Test Prusov A.</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center">
+                JS Test Task Prusov Anton
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="search">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Title contains</span>
+                    </div>
+                    <input type="text" class="form-control" id="search-string">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><img src="img/svg_icons/search.svg" class="icon" alt="search"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="main_content">
+                <table id="" class="table table-bordered table-hover table-responsive-sm">
+                    <thead>
+                        <tr class="text-center table-info" id="table-headings-row"></tr>
+                    </thead>
+                    <tbody id="product-list__body"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <nav class="page-pagination">
+                <ul class="pagination pagination-sm" id="pagination"></ul>
+            </nav>
+        </div>
+    </footer>
+    <div id="preloader">
+        <img class="loader" src="img/svg_icons/refresh-page-arrow-button.svg" alt="loading...">
+    </div>
+    <script src="js/common.js"></script>
+</body>
+</html>
